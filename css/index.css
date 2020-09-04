@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -26,8 +26,14 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+
+    display: block;
 }
+
+/* * {
+    border: solid black 1px;
+} */
+
 body {
 	line-height: 1;
 }
@@ -64,6 +70,62 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+
+header {
+    display: flex;
+    margin: 1%;
+    
+}
+
+header div {
+    display: flex;
+}
+
+div .headelement nav {
+display: flex;
+}
+
+.headelement {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.headelement nav a {
+    display: flex;
+    align-items: baseline;
+}
+
+.headelement div {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+nav img {
+    margin-right:2%;
+}
+
+nav a {
+    display: flex;
+}
+
+a {
+    display: flex;
+    align-items: center;   
+    width: 125px;
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
 }
 
 .container {
@@ -104,12 +166,51 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.box:nth-child(1) {
+    background: teal;
+}
+
+.box:nth-child(2) {
+    background: gold;
+}
+
+.box:nth-child(3) {
+    background: cadetblue;
+}
+
+.box:nth-child(4) {
+    background: coral;
+}
+
+.box:nth-child(5) {
+    background: crimson;
+}
+
+.box:nth-child(6) {
+    background: forestgreen;
+}
+
+.box:nth-child(7) {
+    background: darkorchid;
+}
+
+.box:nth-child(8) {
+    background: hotpink;
+}
+
+.box:nth-child(9) {
+    background: indigo;
+}
+
+.box:nth-child(10) {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -144,3 +245,6 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* CSS About Page*/
+ 
